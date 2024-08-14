@@ -1,0 +1,13 @@
+<h1>Test Title</h1>
+
+<a href="https://whytheluckystiff.net?what=bacon&how=chunky">
+  Hardcoded url (remains valid)
+</a>
+
+<a href="<%= 'https://whytheluckystiff.net?what=bacon&how=chunky' %>">
+  String url (becomes invalid)
+</a>
+
+<%= link_to 'https://whytheluckystiff.net?what=bacon&how=chunky' do %>
+  Link helper (becomes invalid)
+<% end %>

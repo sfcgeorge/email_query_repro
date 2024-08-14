@@ -1,24 +1,19 @@
-# README
+## Reproduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+bundle install
+```
 
-Things you may want to cover:
+➡️ Then to reproduce run `rails test`
 
-* Ruby version
+## See files
 
-* System dependencies
+```
+app/mailers/repro_mailer.rb
+app/views/repro_mailer/repro_email.erb
+test/mailers/repro_mailer_test.rb
+```
 
-* Configuration
+## Note
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Note that [mailer previews](http://127.0.0.1:3000/rails/mailers/repro_mailer/repro_email) do not show the issue 🤔
